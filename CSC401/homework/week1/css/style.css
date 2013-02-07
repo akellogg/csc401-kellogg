@@ -1,0 +1,154 @@
+/*-----MISC-----*/
+body {
+	background-color:#999;
+}
+#wrapper {
+	background-color:#CCC;
+	height:1245px;
+	margin:auto;
+	width:960px;
+}
+
+/*-----HEADER-----*/
+#header {
+	background-color:#CCC;
+	height:100px;
+	margin:auto;
+	margin-top:-10px;
+	padding-top:10px;
+	width:960px;
+	z-index:1;
+}
+
+#title {
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:36px;
+	font-weight:100;
+	letter-spacing:1px;
+	margin-left:50px;
+	margin-top:30px;
+}
+
+.nav_top {
+	background-color:#CF3300;
+	color:#FFF;
+	display:inline-block;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:20px;
+	font-weight:100;
+	left:610px;
+	letter-spacing:1px;
+	margin-right:6px;
+	padding:5px;
+	position:relative;
+	text-align:center;
+	top:-90px;
+}
+
+/*-----BODY-----*/
+#main_section {
+	background-color:#FFF;
+	float:left;
+	height:1000px;
+	padding:10px 50px 10px 50px;
+	width:507px;
+}
+
+h4 {
+	font-family:Georgia,serif;
+}
+
+h1 {
+	color:#222;
+	font-family:Georgia,serif;
+	font-size:36px;
+}
+
+h2 {
+	color:#222;
+	font-family:Georgia,serif;
+}
+
+p {
+	font-family:Georgia,serif;
+	font-size:20px;
+	line-height:25px;
+}
+
+a:link {
+	color:#CF3300;
+	font-size:16px;
+}
+
+a:visited {
+	color:#CF3300;
+	font-size:16px;
+}
+
+/*-----SIDEBAR-----*/
+#sidebar {
+	background-color:#FFF;
+	float:right;
+	height:1000px;
+	padding:10px 50px 10px 50px;
+	width:252px;
+}
+
+h5 {
+	font-family:Georgia,serif;
+}
+
+h3 {
+	font-family:Georgia,serif;
+}
+
+.sidebar_text {
+	font-family:Georgia,serif;
+	font-size:18px;
+}
+
+.work {
+	background-color:#CF3300;
+	color:#FFF;
+	display:block;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:18px;
+	font-weight:100;
+	letter-spacing:1px;
+	margin-bottom:10px;
+	margin-top:10px;
+	padding:3px 3px 3px 5px;
+	position:relative;
+	text-align:left;
+	width:220px;
+}
+
+/*-----FOOTER-----*/
+#footer {
+	background-color:#FFF;
+	border-top:1px solid #CCC;
+	clear:both;
+	height:145px;
+	width:960px;
+}
+
+.footer_text {
+	padding-left:50px;
+	padding-top:30px;
+}
+
+.nav_footer {
+	background-color:#CF3300;
+	color:#FFF;
+	display:inline-block;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	font-size:20px;
+	font-weight:100;
+	left:610px;
+	letter-spacing:1px;
+	margin-right:6px;
+	padding:5px;
+	position:relative;
+	text-align:center;
+	top:-70px;
+}
