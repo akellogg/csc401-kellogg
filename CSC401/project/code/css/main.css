@@ -93,6 +93,61 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+    font-family: 'archiveregular';
+    src: url('webfonts/archive-webfont.eot');
+    src: url('webfonts/archive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/archive-webfont.woff') format('woff'),
+         url('webfonts/archive-webfont.ttf') format('truetype'),
+         url('webfonts/archive-webfont.svg#archiveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('webfonts/raleway-bold-webfont.eot');
+    src: url('webfonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/raleway-bold-webfont.woff') format('woff'),
+         url('webfonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('webfonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('webfonts/raleway-medium-webfont.eot');
+    src: url('webfonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/raleway-medium-webfont.woff') format('woff'),
+         url('webfonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('webfonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('webfonts/raleway-regular-webfont.eot');
+    src: url('webfonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/raleway-regular-webfont.woff') format('woff'),
+         url('webfonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('webfonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('webfonts/raleway-light-webfont.eot');
+    src: url('webfonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/raleway-light-webfont.woff') format('woff'),
+         url('webfonts/raleway-light-webfont.ttf') format('truetype'),
+         url('webfonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     height: 100%;
 }
@@ -121,7 +176,119 @@ h2 {
 	color:#FFF;
 }
 
+.title-weather {
+	color:#FFF;
+	font-family:ralewaylight;
+	font-size:30px;
+}
 
+.title-now {
+	color:#FFF;
+	font-family:ralewaybold;
+	font-size:30px;
+}
+
+.settings {
+	position:absolute;
+	right:20px;
+}
+
+.zipcode-form {
+	position:absolute;
+	top:100px;
+	left:40px;
+}
+
+.subtitle {
+	color:#FFF;
+	font-family:archiveregular;
+	font-size:18px;
+	letter-spacing:1px;
+	text-shadow:1px 1px 2px #C0C0C0;
+}
+
+form {
+	margin: 0 0 20px;
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+	font-size:14px;
+	font-weight:normal;
+	line-height:20px;
+}
+
+label {
+	display:block;
+	margin-bottom:5px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border:2px solid #0D4A53;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+	border-radius:10px;
+	color:#FFF;
+	display:inline-block;
+	font-family:ralewayregular;
+	font-size:14px;
+	height:20px;
+	line-height:20px;
+	margin-bottom:20px;
+	padding:4px 10px;
+	vertical-align:middle;
+	width:275px;
+}
+
+.btn {
+	background-color:#33a4b5;
+	background-image: linear-gradient(top, #33a4b5, #177280);
+	background-image: -o-linear-gradient(top, #33a4b5, #177280);
+	background-image: -moz-linear-gradient(top, #33a4b5, #177280);
+	background-image: -webkit-linear-gradient(top, #33a4b5, #177280);
+	background-image: -ms-linear-gradient(top, #33a4b5, #177280);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33a4b5), color-stop(100%, #177280));
+	border:2px solid #0d4a53; 
+		-webkit-border-radius:10px; 
+		-moz-border-radius:10px;
+	border-radius:10px;
+	color:#FFF;
+	font-family:archiveregular;
+	height:32px;
+	letter-spacing:1px;
+	line-height:20px;
+	margin-bottom:10px;
+	padding:4px 6px;
+	text-align:center;
+	text-shadow:-1px -1px 0 rgba(0,0,0,0.3);
+	vertical-align:middle;
+	width:300px;
+}
 
 
 
