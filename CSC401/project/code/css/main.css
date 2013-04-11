@@ -172,6 +172,43 @@ body {
     margin: 0;
 }
 
+.location {
+	background-image: linear-gradient(bottom, rgb(231,118,37) 100%, rgb(248,228,100) 0%);
+	background-image: -o-linear-gradient(bottom, rgb(231,118,37) 100%, rgb(248,228,100) 0%);
+	background-image: -moz-linear-gradient(bottom, rgb(231,118,37) 100%, rgb(248,228,100) 0%);
+	background-image: -webkit-linear-gradient(bottom, rgb(231,118,37) 100%, rgb(248,228,100) 0%);
+	background-image: -ms-linear-gradient(bottom, rgb(231,118,37) 100%, rgb(248,228,100) 0%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(231,118,37)),
+		color-stop(0, rgb(248,228,100))
+	);
+	background-repeat: no-repeat;
+	height:100%;
+	margin:0;
+}
+
+.saved-locations {
+	background-image: linear-gradient(bottom, rgb(217,63,163) 0%, rgb(34,175,170) 50%, rgb(155,79,225) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(217,63,163) 0%, rgb(34,175,170) 50%, rgb(155,79,225) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(217,63,163) 0%, rgb(34,175,170) 50%, rgb(155,79,225) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(217,63,163) 0%, rgb(34,175,170) 50%, rgb(155,79,225) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(217,63,163) 0%, rgb(34,175,170) 50%, rgb(155,79,225) 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(217,63,163)),
+		color-stop(0.5, rgb(34,175,170)),
+		color-stop(1, rgb(155,79,225))
+	);
+	background-repeat:no-repeat;
+	height:100%;
+	margin:0;
+}
+
 h2 {
 	color:#FFF;
 }
@@ -290,13 +327,46 @@ input[type="color"],
 	width:300px;
 }
 
+.city {
+	color:#FFF;
+	font-family:ralewaylight;
+	font-size:25px;
+	margin-top:10px;
+	margin-left:10px;
+	/*text-shadow:1px 1px 1px #DADADA;*/
+}
 
+.weather-icon {
+	margin-top:10px;
+	margin-left:25px;
+}
 
+#desc {
+	color:#474747;
+	font-family:ralewayregular;
+	font-size:13px;
+	margin-top:5px;
+	/*margin-left:10px;*/
+	/*text-shadow:1px 1px 1px #DADADA;*/
+}
+.current-temp {
+	color:#FFF;
+	float:right;
+	font-family:archiveregular;
+	font-size:85px;
+	position:fixed;
+	right:20px;
+	margin-top:-110px;
+}
 
-
-
-
-
+.saved-city {
+	color:#FFF;
+	font-family:ralewayregular;
+	font-size:25px;
+	margin-top:20px;
+	margin-left:10px;
+	/*text-shadow:1px 1px 1px #DADADA;*/
+}
 
 
 /* ==========================================================================
