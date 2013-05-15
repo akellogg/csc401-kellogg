@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body class="saved-locations">
+    <body class="alert">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -27,40 +27,31 @@
 			<div class="row-fluid">
 				<div class="span2">
 					<div class="title-weather">Weather<span class="title-now">Now</span>
+					<a class="marker" href="savedlocations.html"><img src="img/marker.png" height="30px" width="18px"></a>
 					<a class="settings" href="settings.html"><img src="img/settings.png" height="30px" width="30px"></a>
 					</div>
 				</div>
-				<a href="location.html"><div class="saved-loc">
-					<p class="saved-city">Beverly, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div></a>
-				<div class="saved-loc">
-					<p class="saved-city">Boston, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
+				<div class="span2">
+					<div class="city">Beverly, MA</div>
 				</div>
-				<div class="saved-loc">
-					<p class="saved-city">Gloucester, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div>
-				<div class="saved-loc">
-					<p class="saved-city">Salem, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div>
-				<div class="saved-loc">
-					<p class="saved-city">Peabody, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div>
+				<div class="alert-title">Winter Storm Warning</div>
+				<div class="alert-info">Winter Storm Warning remains <br/> in effect until 10pm EST tonight</div>
+				<div class="alert-subtitle">Timing</div>
+				<div class="alert-desc">Winter Storm Warning starting at 5:30pm 01/10/13 and going until 10pm 01/10/13.</div>
+				<div class="alert-subtitle">Snow Accumulation</div>
+				<div class="alert-desc">Snow Accumulation estimated around 6 inches. Estimated 2 inches between 5:30pm EST and 7pm EST, picking up around 7:30pm EST and accumulating 4 inches by 10pm EST.</div>
+				<div class="alert-subtitle">Effected Locations</div>
+				<div class="alert-desc">This Winter Storm Warning is for Essex County with peak areas including Beverly, Salem, Danvers, Peabody, Hamilton, Wenham, Lynn and Swampscott.</div>
 			</div> <!-- close row-fluid -->
+			<div class="row-fluid">
+				<div class="footer">
+					<ul>
+						<a href="location.html"><li class="footer-btn">NOW</li></a>
+						<a href="5dayforecast.html"><li class="footer-btn">5 DAY</li></a>
+						<a href="alert.html"><li class="footer-btn">ALERT</li></a>
+					</ul>
+				</div>
+			</div>
 		</div> <!-- close container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>

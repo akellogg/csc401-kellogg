@@ -149,7 +149,9 @@ textarea {
 }
 
 html {
-    height: 100%;
+	height:100%;
+    margin:0;
+    padding:0 10 0 10;
 }
 
 body {
@@ -168,8 +170,11 @@ body {
 		color-stop(1, rgb(58,202,238))
 	);
 	background-repeat: no-repeat;
-	height: 100%;
-    margin: 0;
+	/*height:100%;*/
+    margin:0;
+    min-height:100%;
+    padding:0 10 0 10;
+    position:relative;
 }
 
 .location {
@@ -209,25 +214,49 @@ body {
 	margin:0;
 }
 
+.alert {
+	background-image: linear-gradient(bottom, rgb(230,59,7) 100%, rgb(234,138,3) 50%, rgb(191,84,13) 0%);
+	background-image: -o-linear-gradient(bottom, rgb(230,59,7) 100%, rgb(234,138,3) 50%, rgb(191,84,13) 0%);
+	background-image: -moz-linear-gradient(bottom, rgb(230,59,7) 100%, rgb(234,138,3) 50%, rgb(191,84,13) 0%);
+	background-image: -webkit-linear-gradient(bottom, rgb(230,59,7) 100%, rgb(234,138,3) 50%, rgb(191,84,13) 0%);
+	background-image: -ms-linear-gradient(bottom, rgb(230,59,7) 100%, rgb(234,138,3) 50%, rgb(191,84,13) 0%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(230,59,7)),
+		color-stop(0.5, rgb(234,138,3)),
+		color-stop(0, rgb(191,84,13))
+	);
+	background-repeat:no-repeat;
+	height:100%;
+	margin:0;
+}
+
 h2 {
 	color:#FFF;
 }
 
 .title-weather {
 	color:#FFF;
-	font-family:ralewaylight;
+	font-family:'ralewaylight';
 	font-size:30px;
 }
 
 .title-now {
 	color:#FFF;
-	font-family:ralewaybold;
+	font-family:'ralewaybold';
 	font-size:30px;
 }
 
 .settings {
 	position:absolute;
 	right:20px;
+}
+
+.marker {
+	position:absolute;
+	right:65px;
 }
 
 .zipcode-form {
@@ -238,7 +267,7 @@ h2 {
 
 .subtitle {
 	color:#FFF;
-	font-family:archiveregular;
+	font-family:'archiveregular';
 	font-size:18px;
 	letter-spacing:1px;
 	text-shadow:1px 1px 2px #C0C0C0;
@@ -292,7 +321,7 @@ input[type="color"],
 	border-radius:10px;
 	color:#FFF;
 	display:inline-block;
-	font-family:ralewayregular;
+	font-family:'ralewayregular';
 	font-size:14px;
 	height:20px;
 	line-height:20px;
@@ -315,7 +344,7 @@ input[type="color"],
 		-moz-border-radius:10px;
 	border-radius:10px;
 	color:#FFF;
-	font-family:archiveregular;
+	font-family:'archiveregular';
 	height:32px;
 	letter-spacing:1px;
 	line-height:20px;
@@ -329,43 +358,462 @@ input[type="color"],
 
 .city {
 	color:#FFF;
-	font-family:ralewaylight;
+	font-family:'ralewaylight';
 	font-size:25px;
 	margin-top:10px;
 	margin-left:10px;
 	/*text-shadow:1px 1px 1px #DADADA;*/
 }
 
-.weather-icon {
-	margin-top:10px;
-	margin-left:25px;
+.current-weather {
+	/*border:1px solid #000;*/
+	height:100px;
+	margin:20px 10px 10px 20px;
+	position:absolute;
+	text-align:center;
+	width:130px;
 }
 
-#desc {
-	color:#474747;
-	font-family:ralewayregular;
-	font-size:13px;
-	margin-top:5px;
-	/*margin-left:10px;*/
-	/*text-shadow:1px 1px 1px #DADADA;*/
-}
 .current-temp {
+	/*border:1px solid #000;*/
+	height:100px;
+	margin:20px 10px 10px 10px;
+	position:absolute;
+	right:40px;
+	text-align:center;
+	width:130px;
+}
+
+.hi-temp {
+	/*border:1px solid #000;*/
+	height:75px;
+	margin:20px 10px 10px 20px;
+	position:relative;
+	text-align:center;
+	top:130px;
+	width:130px;
+}
+
+.lo-temp {
+	/*border:1px solid #000;*/
+	height:75px;
+	margin:20px 10px 10px 20px;
+	position:relative;
+	text-align:center;
+	top:140px;
+	width:130px;
+}
+
+.sunrise {
+	/*border:1px solid #000;*/
+	height:75px;
+	margin:20px 10px 10px 20px;
+	position:relative;
+	text-align:center;
+	top:150px;
+	width:130px;
+}
+
+.precip {
+	/*border:1px solid #000;*/
+	height:50px;
+	margin:20px 10px 10px 10px;
+	position:absolute;
+	right:40px;
+	text-align:center;
+	top:215px;
+	width:130px;
+}
+
+.wind {
+	/*border:1px solid #000;*/
+	height:50px;
+	margin:20px 10px 10px 10px;
+	position:absolute;
+	right:40px;
+	text-align:center;
+	top:285px;
+	width:130px;
+}
+
+.humidity {
+	/*border:1px solid #000;*/
+	height:50px;
+	margin:20px 10px 10px 10px;
+	position:absolute;
+	right:40px;
+	text-align:center;
+	top:355px;
+	width:130px;
+}
+
+.sunset {
+	/*border:1px solid #000;*/
+	height:50px;
+	margin:20px 10px 10px 10px;
+	position:absolute;
+	right:40px;
+	text-align:center;
+	top:425px;
+	width:130px;
+}
+
+.temp-num {
 	color:#FFF;
-	float:right;
-	font-family:archiveregular;
+	font-family:'archiveregular';
 	font-size:85px;
-	position:fixed;
-	right:20px;
-	margin-top:-110px;
+	line-height:77%;
+}
+
+.hi-num {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:50px;
+	line-height:75%;
+}
+
+.precip-num {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:25px;
+	line-height:75%;
+}
+
+.wind-num {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:25px;
+	line-height:70%;
+}
+
+.humidity-num {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:25px;
+	line-height:75%;
+}
+
+.lo-num {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:50px;
+	line-height:75%;
+}
+
+.sunrise-time {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:25px;
+	line-height:75%;
+}
+
+.sunset-time {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:25px;
+	line-height:75%;
+}
+
+.am-pm {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:17px;
+}
+
+.desc {
+	color:#474747;
+	font-family:'ralewayregular';
+	font-size:14px;
+	text-align:left;
+}
+
+.saved-loc {
+	/*border:1px solid #000;*/
+	height:75px;
+	margin:20px 10px 10px 5px;
+	position:relative;
+	text-align:left;
+	width:350px;
 }
 
 .saved-city {
 	color:#FFF;
-	font-family:ralewayregular;
+	font-family:'ralewayregular';
 	font-size:25px;
-	margin-top:20px;
+	line-height:5%;
+}
+
+.saved-temp {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:25px;
+	line-height:5%;
+}
+
+.saved-hi-lo {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:20px;
+	line-height:5%;
+}
+
+.saved-weather {
+	position:absolute;
+	right:5px;
+	top:-5px;
+}
+
+.forecast {
+	/*border:1px solid #000;*/
+	height:75px;
+	margin:-10px 10px 10px 5px;
+	position:relative;
+	text-align:left;
+	width:350px;
+}
+
+.categoryA {
+	color:#474747;
+	font-family:'ralewayregular';
+	font-size:12px;
+	margin-bottom:-10px;
+	margin-left:4px;
+	text-align:left;
+}
+
+.categoryB {
+	color:#474747;
+	font-family:'ralewayregular';
+	font-size:12px;
+	margin-bottom:-10px;
+	margin-left:154px;
+	text-align:left;
+}
+
+.categoryC {
+	color:#474747;
+	font-family:'ralewayregular';
+	font-size:12px;
+	margin-bottom:-10px;
+	margin-left:84px;
+	text-align:left;
+}
+
+.forecast-info {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:20px;
+	margin-top:25px;
+}
+
+.forecast-cloud {
+	margin-left:40px;
+}
+
+.forecast-hilo {
+	margin-left:50px;
+}
+
+.forecast-precip {
+	margin-left:45px;
+}
+
+.day {
+	color:#474747;
+	font-family:'ralewayregular';
+	font-size:11px;
+	margin-bottom:-10px;
+	margin-top:-2px;
+	text-align:left;
+}
+
+.footer {
+	/*background:#000;*/
+	bottom:0;
+	left:0px;
+	height:50px;
+	position:fixed;
+	width:100%;
+}
+
+.footer-btn {
+	background-color:#33a4b5;
+	background-image: linear-gradient(top, #33a4b5, #177280);
+	background-image: -o-linear-gradient(top, #33a4b5, #177280);
+	background-image: -moz-linear-gradient(top, #33a4b5, #177280);
+	background-image: -webkit-linear-gradient(top, #33a4b5, #177280);
+	background-image: -ms-linear-gradient(top, #33a4b5, #177280);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33a4b5), color-stop(100%, #177280));
+	border:1px solid #0d4a53; 
+	color:#FFF;
+	font-family:'ralewayregular';
+	font-size:20px;
+	float:left;
+	height:20px;
+	letter-spacing:1px;
+	line-height:20px;
+	padding:8px 6px;
+	text-align:center;
+	vertical-align:middle;
+	width:119px;
+}
+
+.footer ul {
+	bottom:0px;
+	left:0px;
+	list-style-type: none;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	position:fixed;
+}
+
+.saved-loc a:link, visited, hover, active {
+	text-decoration:none;
+}
+
+.alert-title {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:25px;
+	margin-top:15px;
+	text-align:center;
+}
+
+.alert-info {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:15px;
+	letter-spacing:1px;
+	line-height:1.5;
+	margin-top:15px;
+	text-align:center;
+}
+
+.alert-subtitle {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:15px;
+	letter-spacing:1px;
+	margin-top:15px;
+	text-align:left;
+}
+
+.alert-desc {
+	color:#FFF;
+	font-family:'ralewayregular';
+	font-size:15px;
+	letter-spacing:1px;
+	margin-top:5px;
+	text-align:left;
+}
+
+.settings-subtitle {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:15px;
+	letter-spacing:1px;
 	margin-left:10px;
-	/*text-shadow:1px 1px 1px #DADADA;*/
+	margin-top:20px;
+	text-align:left;
+}
+
+.settings-subtitle2 {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:15px;
+	letter-spacing:1px;
+	margin-left:10px;
+	margin-top:40px;
+	text-align:left;
+}
+
+.settings-desc {
+	color:#FFF;
+	font-family:'ralewayregular';
+	font-size:20px;
+	letter-spacing:1px;
+	margin-left:50px;
+	position:relative;
+	top:-50px;
+}
+
+.favorite {
+	/*border:1px solid #000;*/
+	float:right;
+	height:30px;
+	margin:10px 10px 10px 5px;
+	position:relative;
+	right:115px;
+	text-align:left;
+	vertical-align:center;
+	width:30px;
+	top:-111px;
+}
+
+.delete-loc {
+	/*border:1px solid #000;*/
+	height:30px;
+	margin:10px 10px 15px 5px;
+	position:relative;
+	text-align:left;
+	vertical-align:center;
+	width:350px;
+}
+
+.delete-btn {
+	background-color:#33a4b5;
+	background-image: linear-gradient(top, #33a4b5, #177280);
+	background-image: -o-linear-gradient(top, #33a4b5, #177280);
+	background-image: -moz-linear-gradient(top, #33a4b5, #177280);
+	background-image: -webkit-linear-gradient(top, #33a4b5, #177280);
+	background-image: -ms-linear-gradient(top, #33a4b5, #177280);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33a4b5), color-stop(100%, #177280));
+	border:2px solid #0d4a53; 
+		-webkit-border-radius:10px; 
+		-moz-border-radius:10px;
+	border-radius:30px;
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:30px;
+	height:20px;
+	letter-spacing:1px;
+	line-height:20px;
+	margin-bottom:10px;
+	padding:4px 6px;
+	text-align:center;
+	text-shadow:-1px -1px 0 rgba(0,0,0,0.3);
+	vertical-align:middle;
+	width:17px;
+}
+
+.units {
+	/*border:1px solid #000;*/
+	height:50px;
+	margin:10px 10px 10px 5px;
+	position:relative;
+	text-align:left;
+	vertical-align:center;
+	width:350px;
+}
+
+.units-subtitle {
+	color:#FFF;
+	font-family:'archiveregular';
+	font-size:15px;
+	letter-spacing:1px;
+	margin-left:20px;
+	margin-top:-20px;
+	text-align:left;
+}
+
+.units-desc {
+	color:#FFF;
+	font-family:'ralewayregular';
+	font-size:15px;
+	letter-spacing:1px;
+	margin-left:20px;
+	position:relative;
+	top:-15px;
 }
 
 

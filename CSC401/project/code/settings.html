@@ -27,38 +27,46 @@
 			<div class="row-fluid">
 				<div class="span2">
 					<div class="title-weather">Weather<span class="title-now">Now</span>
-					<a class="settings" href="settings.html"><img src="img/settings.png" height="30px" width="30px"></a>
+					<a class="settings" href="location.html"><img src="img/close.png" height="24px" width="23px"></a>
 					</div>
 				</div>
-				<a href="location.html"><div class="saved-loc">
-					<p class="saved-city">Beverly, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div></a>
-				<div class="saved-loc">
-					<p class="saved-city">Boston, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div>
-				<div class="saved-loc">
-					<p class="saved-city">Gloucester, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div>
-				<div class="saved-loc">
-					<p class="saved-city">Salem, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
-				</div>
-				<div class="saved-loc">
-					<p class="saved-city">Peabody, MA <span class="saved-temp">68°</span></p>
-					<p class="desc">Hi °F <span class="saved-hi-lo">70°</span> <span class="desc">Lo °F</span> <span class="saved-hi-lo">63°</span></p>
-					<img src="img/cloud.png" class="saved-weather" height="49px" width="75px" />
-					<hr/>
+				<div class="span2">
+					<div class="city">Settings</div>
+					<div class="settings-subtitle">Locations</div>
+					<div class="delete-loc">
+						<div class="delete-btn">–</div>
+						<p class="settings-desc">Beverly, MA</p>
+						<div class="favorite"> <img src="img/star.png" height="27px" width="26px" /> </div>
+					</div>
+					<div class="delete-loc">
+						<div class="delete-btn">–</div>
+						<p class="settings-desc">Boston, MA</p>
+					</div>
+					<div class="delete-loc">
+						<div class="delete-btn">–</div>
+						<p class="settings-desc">Gloucester, MA</p>
+					</div>
+					<div class="delete-loc">
+						<div class="delete-btn">–</div>
+						<p class="settings-desc">Salem, MA</p>
+					</div>
+					<div class="delete-loc">
+						<div class="delete-btn">–</div>
+						<p class="settings-desc">Peabody, MA</p>
+					</div>
+					<div class="settings-subtitle2">Units</div>
+					<div class="units">
+						<input checked="checked" name="imperial" value="i" type="radio"><p class="units-subtitle">Imperial – US</p>
+						<p class="units-desc">F / mph / miles / inches</p>
+					</div>
+					<div class="units">
+						<input name="metric" value="m" type="radio"><p class="units-subtitle">Metric – World</p>
+						<p class="units-desc">C / millimeters / km / kph / millibars</p>
+					</div>
+					<div class="units">
+						<input name="Hybrid" value="h" type="radio"><p class="units-subtitle">Hybrid – UK</p>
+						<p class="units-desc">C / millimeters / miles / mph / millibars</p>
+					</div>
 				</div>
 			</div> <!-- close row-fluid -->
 		</div> <!-- close container -->

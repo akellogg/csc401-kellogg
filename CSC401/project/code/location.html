@@ -27,26 +27,60 @@
 			<div class="row-fluid">
 				<div class="span2">
 					<div class="title-weather">Weather<span class="title-now">Now</span>
-					<a class="settings" href="#"><img src="img/settings.png" height="30px" width="30px"></a>
+					<a class="marker" href="savedlocations.html"><img src="img/marker.png" height="30px" width="18px"></a>
+					<a class="settings" href="settings.html"><img src="img/settings.png" height="30px" width="30px"></a>
 					</div>
 				</div>
 				<div class="span2">
 					<div class="city">Beverly, MA</div>
 				</div>
-				<div class="span2">
-					<div class="weather-icon"><img src="img/cloud.png" height="75px" width="114px"/>
-						<div id="desc">Partly Sunny</div>
-					</div>
-					<div class="current-temp">68°
-						<div id="desc">Current °F</div>
-					</div>
+				<div class="current-weather">
+					<img src="img/cloud.png" height="65px" width="100px" />
+					<p class="desc">Partly Sunny</p>
+				</div>
+				<div class="current-temp">
+					<div class="temp-num">68°</div>
+					<p class="desc">Current °F</p>
+				</div>
+				<div class="hi-temp">
+					<div class="hi-num">70°</div>
+					<p class="desc">Hi Temp</p>
+				</div>
+				<div class="precip">
+					<div class="precip-num">10%</div>
+					<p class="desc">Precipitation</p>
+				</div>
+				<div class="wind">
+					<div class="wind-num">N @ 5<span class="am-pm">MPH</span></div>
+					<p class="desc">Wind</p>
+				</div>
+				<div class="humidity">
+					<div class="humidity-num">25%</div>
+					<p class="desc">Humidity</p>
+				</div>
+				<div class="lo-temp">
+					<div class="lo-num">63°</div>
+					<p class="desc">Lo Temp</p>
+				</div>
+				<div class="sunrise">
+					<div class="sunrise-time">6:45<span class="am-pm">am</span></div>
+					<p class="desc">Sunrise</p>
+				</div>
+				<div class="sunset">
+					<div class="sunset-time">7:25<span class="am-pm">pm</span></div>
+					<p class="desc">Sunset</p>
+				</div>
+			</div> <!-- close row-fluid -->
+			<div class="row-fluid">
+				<div class="footer">
+					<ul>
+						<a href="location.html"><li class="footer-btn">NOW</li></a>
+						<a href="5dayforecast.html"><li class="footer-btn">5 DAY</li></a>
+						<a href="alert.html"><li class="footer-btn">ALERT</li></a>
+					</ul>
 				</div>
 			</div>
-			<!-- <div id="weather">
-				<ul>
-				</ul>
-			</div> -->
-		</div>
+		</div> <!-- close container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
